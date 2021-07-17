@@ -1,16 +1,22 @@
-import React, { useEffect, useState } from "react";
-import { Route } from "react-router";
-import { BrowserRouter } from "react-router-dom";
-import NotFound from "./components/NotFound";
-import Search from "./components/Search"
+import React, { Suspense } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import IsLoading from "./components/IsLoading";
 
+const Search = React.lazy(() => import("./components/Search"));
+const NotFound = React.lazy(() => import("./components/NotFound"));
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Route path="/" exact component={Search}/>
-      <Route path="*" exact component={NotFound}/>
-    </BrowserRouter>
+    <React.Fragment>
+      <Router>
+        <Suspense fallback={<IsLoading />}>
+          <Switch>
+            <Route path="/" exact component={Search} />
+            <Route path="*" exact component={NotFound} />
+          </Switch>
+        </Suspense>
+      </Router>
+    </React.Fragment>
   );
 };
 

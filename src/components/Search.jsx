@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+import "../sass/main.scss";
 
 const Search = () => {
-    return ( <div>
-        coming soon
-    </div> );
-}
- 
+  return (
+    <div className="container">
+      <div className="gcse-search"></div>
+    </div>
+  );
+};
+
 export default Search;
