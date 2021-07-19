@@ -1,0 +1,2 @@
+(this.webpackJsonpmyfirstreactapp=this.webpackJsonpmyfirstreactapp||[]).push([[4],{33:function(s,c,e){"use strict";e.r(c);e(0),e(16);var t=e(3);c.default=function(){return Object(t.jsx)("div",{className:"container",children:Object(t.jsx)("div",{className:"gcse-search"})})}}}]);
+//# sourceMappingURL=4.c7a36878.chunk.js.map

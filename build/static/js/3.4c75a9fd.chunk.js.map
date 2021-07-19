@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/NotFound.jsx"],"names":["NotFound","className"],"mappings":"mHAAA,uBAMeA,UAJE,WACf,OAAO,qBAAKC,UAAU,YAAf","file":"static/js/3.4c75a9fd.chunk.js","sourcesContent":["import React from \"react\";\r\n\r\nconst NotFound = () => {\r\n  return <div className=\"container\">Not Found</div>;\r\n};\r\n\r\nexport default NotFound;\r\n"],"sourceRoot":""}
